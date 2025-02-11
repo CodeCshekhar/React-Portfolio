@@ -5,17 +5,16 @@ body {
   justify-content: center;
 }
 
-
 /* Navbar */
 nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;  /* Adjust spacing */
-  padding: 1rem; 
+  gap: 0.5rem;  /* Adjusted spacing for smaller screens */
+  padding: 0.5rem; /* Reduced padding for smaller screens */
   border-radius: 30px;
-  /* Soft glow effect */
 }
+
 
 nav a {
   background: #292929; /* Dark gray */
@@ -32,7 +31,7 @@ nav a {
 nav a:hover {
   background: #525252;
   color: #ffffff;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); /* Stronger glow on hover */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
   transform: translateY(-3px);
 }
 
@@ -53,30 +52,25 @@ section {
 /* Objectives Card */
 .objectives-card {
   margin-top: 120px;
-  background-color: rgba(0, 0, 0, 0.9); /* Darker semi-transparent for better contrast */
+  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 0 15px rgb(0, 0, 0); /* Subtle glow effect */
-  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.objectives-card:hover {
-  box-shadow: 0 0 25px rgba(165, 164, 164, 0.7); /* Stronger glow on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 /* Contact Card */
 .contact-card {
-  background-color: rgba(0, 0, 0, 0.8); /* Light background */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-  padding: 20px; /* Padding inside the card */
-  margin: 20px 0; /* Margin to separate from other elements */
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px 0;
 }
 
 .card {
   border: 2px solid rgb(255, 255, 255);
-  background-color: rgb(14, 14, 14); /* or any desired color */
+  background-color: rgb(14, 14, 14);
   padding: 20px;
   margin-top: 120px;
   border-radius: 10px;
@@ -108,26 +102,26 @@ section {
   border-radius: 50%;
   margin: auto;
   object-fit: cover;
-  border: 3px solid #fff; /* White border around image */
-  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.3); /* Soft glow */
+  border: 3px solid #fff;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.3);
   margin-bottom: 1rem;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns */
-  gap: 20px; /* Space between cards */
-  justify-items: center; /* Center align items */
-  max-width: 100%; /* Increased max width for better layout */
-  height: auto; /* Set height to auto for flexibility */
-  margin: 0 auto; /* Center the container */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 /* skills.css */
 #skills {
   width: 100%;
   max-width: 1200px;
-  padding: 4rem 1rem; /* Dark background */
+  padding: 4rem 1rem;
 }
 
 /* Section Header */
@@ -168,9 +162,497 @@ section {
 }
 
 /* Category-Based Colors */
-.frontend { background-color: #007bff; } /* Blue */
-.backend { background-color: #28a745; }  /* Green */
-.tools { background-color: #f1c40f; }    /* Yellow */
+.frontend { background-color: #007bff; }
+.backend { background-color: #28a745; }
+.tools { background-color: #f1c40f; }
+
+/* Skill Name */
+.skill-name {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+/* Skill Description */
+.skill-description {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #b0b0b0;
+  margin-bottom: 1rem;
+}
+
+/* Progress Bar */
+.skill-progress-container {
+  width: 100%;
+  height: 8px;
+  background: #444;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+  background: linear-gradient(to right, #007bff, #00d4ff);
+}
+
+/* Progress Percentage */
+.skill-progress-text {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #ddd;
+  margin-top: 4px;
+}
+
+/* Projects Section */
+#projects {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Project Card */
+.project-card {
+  max-width: 100%; /* Ensure cards do not overflow */
+} /* Closing brace added for .project-card */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+
+
+  gap: 20px;
+  justify-items: center;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* skills.css */
+#skills {
+  width: 100%;
+  max-width: 1200px;
+  padding: 4rem 1rem;
+}
+
+/* Section Header */
+#skills h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* Skill Card */
+.skill-card {
+  background: linear-gradient(to bottom right, #7a7979, #2a2a2a);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Icon Section */
+.skill-icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  border-radius: 8px;
+  margin: 0 auto 1rem;
+}
+
+/* Category-Based Colors */
+.frontend { background-color: #007bff; }
+.backend { background-color: #28a745; }
+.tools { background-color: #f1c40f; }
+
+/* Skill Name */
+.skill-name {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+/* Skill Description */
+.skill-description {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #b0b0b0;
+  margin-bottom: 1rem;
+}
+
+/* Progress Bar */
+.skill-progress-container {
+  width: 100%;
+  height: 8px;
+  background: #444;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+  background: linear-gradient(to right, #007bff, #00d4ff);
+}
+
+/* Progress Percentage */
+.skill-progress-text {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #ddd;
+  margin-top: 4px;
+}
+
+/* Projects Section */
+#projects {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Project Card */
+.project-card {
+  background: #2d3748;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 15px;
+}
+
+.project-tags span {
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+/* Project Image */
+.project-card div[class^="project-image"] {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+}
+
+/* Assign specific background images */
+.project-image-BugTracker {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/projects/404/bc3ea6124411329.Y3JvcCwxMDQwLDgxMywwLDExMw.png");
+}
+
+.project-image-RedditAppDemo {
+  background-image: url("https://logos-world.net/wp-content/uploads/2020/11/Reddit-symbol.png");
+}
+
+.project-image-Ecommerce {
+  background-image: url("https://i.pinimg.com/736x/ef/82/4e/ef824ee86efb3ec6cc6eb6758cd5e70c.jpg");
+}
+
+/* Education Section */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.education-card {
+  background: #2d3748;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 15px auto;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.education-card:hover {
+  transform: scale(1.05);
+}
+
+.education-institution {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #63b3ed;
+}
+
+.education-duration {
+  font-size: 1rem;
+  color: #a0aec0;
+  margin-top: 5px;
+}
+
+.education-description {
+  font-size: 0.9rem;
+  color: #cbd5e0;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.education-links {
+  margin-top: 1.5rem;
+}
+
+.ref-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #000000 0%, #393a3b 100%);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgb(145, 144, 144);
+}
+
+.ref-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgb(141, 140, 140);
+}
+
+/* Objectives Section */
+.objectives {
+  display: flex;
+  background: linear-gradient(145deg, #334155, #31394e);
+  padding: 2rem; /* Reduced padding for smaller screens */
+  border-radius: 20px;
+  width: 90%;
+  margin: 1rem auto; /* Reduced margin for smaller screens */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  font-size: 1rem; /* Adjusted font size for smaller screens */
+  line-height: 1.6;
+  letter-spacing: 1px;
+  color: #ecf0f1;
+  max-width: 1200px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted for responsiveness */
+  gap: 15px; /* Reduced gap for smaller screens */
+  justify-items: center;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+/* skills.css */
+#skills {
+  width: 100%;
+  max-width: 1200px;
+  padding: 4rem 1rem;
+}
+
+/* Section Header */
+#skills h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* Skill Card */
+.skill-card {
+  background: linear-gradient(to bottom right, #7a7979, #2a2a2a);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Icon Section */
+.skill-icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  border-radius: 8px;
+  margin: 0 auto 1rem;
+}
+
+/* Category-Based Colors */
+.frontend { background-color: #007bff; }
+.backend { background-color: #28a745; }
+.tools { background-color: #f1c40f; }
+
+/* Skill Name */
+.skill-name {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+/* Skill Description */
+.skill-description {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #b0b0b0;
+  margin-bottom: 1rem;
+}
+
+/* Progress Bar */
+.skill-progress-container {
+  width: 100%;
+  height: 8px;
+  background: #444;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+  background: linear-gradient(to right, #007bff, #00d4ff);
+}
+
+/* Progress Percentage */
+.skill-progress-text {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #ddd;
+  margin-top: 4px;
+}
+
+/* Projects Section */
+#projects {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Project Card */
+.project-card {
+  max-width: 100%; /* Ensure cards do not overflow */
+} /* Closing brace added for .project-card */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+
+
+  gap: 20px;
+  justify-items: center;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* skills.css */
+#skills {
+  width: 100%;
+  max-width: 1200px;
+  padding: 4rem 1rem;
+}
+
+/* Section Header */
+#skills h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* Skill Card */
+.skill-card {
+  background: linear-gradient(to bottom right, #7a7979, #2a2a2a);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Icon Section */
+.skill-icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  border-radius: 8px;
+  margin: 0 auto 1rem;
+}
+
+/* Category-Based Colors */
+.frontend { background-color: #007bff; }
+.backend { background-color: #28a745; }
+.tools { background-color: #f1c40f; }
 
 /* Skill Name */
 .skill-name {
@@ -372,6 +854,7 @@ section {
 
 /* Contact Section */
 .contact {
+  display: flex;
   flex-direction: column;
   background: linear-gradient(145deg, #1e293b, #1d2838);
   padding: 3rem;
@@ -439,6 +922,14 @@ section {
   transform: rotate(45deg);
 }
 
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
 .icon:hover:before {
   animation: slide 0.7s forwards;
 }
@@ -470,10 +961,91 @@ section {
   --color: #333;
 }
 
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+
+@media screen and (max-width: 768px) {
+  nav {
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    width: calc(50% - 1rem);
+  }
+
+  .about-text {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .skill-card {
+    margin-bottom: 0.75rem;
+  }
+
+  .skill-name {
+    font-size: 1.5rem;
+  }
+
+  .objectives {
+    padding: 1.5rem;
+    font-size: 1rem;
+    margin: 1rem auto;
+  }
+
+  .project-tags {
+    gap: 0.25rem;
+  }
+
+  .project-tags span {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
+  .education-institution {
+    font-size: 1rem;
+  }
+
+  .education-description {
+    font-size: 0.85rem;
+  }
+
+  .ref-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav a {
+    width: 100%;
+    margin: 0.25rem 0;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card div[class^="project-image"] {
+    height: 120px;
+  }
+
+  .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .icon > i {
+    font-size: 1.2rem;
+  }
+
+  .download-btn button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
 }

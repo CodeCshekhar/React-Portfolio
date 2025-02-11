@@ -1,8 +1,12 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%; /* Adjusted for smaller screens */
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem; /* Reduced padding for smaller screens */
   text-align: center;
+}
+
+.logo {
+  height: 4em; /* Adjusted height for smaller displays */
 }
 
 .logo {
@@ -34,7 +38,7 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 1em; /* Reduced padding for smaller screens */
 }
 
 .read-the-docs {

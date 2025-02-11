@@ -1,4 +1,5 @@
 import React from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -25,8 +26,11 @@ function App() {
         </Routes>
         <Footer />
       </div>
+      <div>
+      {/* ... */}
+      <SpeedInsights />
+    </div>
     </Router>
   );
 }
-
 export default App;
