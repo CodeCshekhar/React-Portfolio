@@ -5,8 +5,7 @@ function About() {
     <section className="container mx-auto p-10 flex flex-col md:flex-row items-center text-center md:text-left">
       {/* Profile Image */}
       <div className="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden shadow-lg mb-6 md:mb-0 md:mr-10">
-      <img src="\src\images\profile.jpg" alt="Chandrashekhar Wagh" className="profile-img" />
-
+      <img src="/profile.jpg" alt="Chandrashekhar Wagh" className="profile-img"/>
       </div>
 
       {/* About Text */}
