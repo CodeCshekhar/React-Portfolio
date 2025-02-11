@@ -10,7 +10,7 @@ function About() {
 
       {/* About Text */}
       <div>
-        <h2 className="text-3xl font-bold">About Me</h2>
+        <h2 className="text-3xl font-bold">CodeCshekhar</h2>
         <div class="section-content">
         <div class="outer-box">
           I am Chandrashekhar Wagh, a Java Full-Stack Web Developer passionate about building web applications.
