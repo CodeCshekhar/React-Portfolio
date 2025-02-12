@@ -18,12 +18,20 @@ const Skills = () => {
           <p className="text-gray-300">Skilled in ORM and database management.</p>
         </div>
         <div className="skill-card">
+          <h3 className="text-lg font-semibold">React</h3>
+          <p className="text-gray-300">Proficient in frameworks like React.</p>
+        </div>
+        <div className="skill-card">
           <h3 className="text-lg font-semibold">JavaScript</h3>
-          <p className="text-gray-300">Proficient in JavaScript and modern frameworks like React.</p>
+          <p className="text-gray-300">Proficient in JavaScript.</p>
         </div>
         <div className="skill-card">
           <h3 className="text-lg font-semibold">HTML & CSS</h3>
           <p className="text-gray-300">Strong understanding of web development standards.</p>
+        </div>
+        <div className="skill-card">
+          <h3 className="text-lg font-semibold">Git & Github</h3>
+          <p className="text-gray-300">Experience in Repo's Managemnet.</p>
         </div>
         <div className="skill-card">
           <h3 className="text-lg font-semibold">MySQL</h3>
