@@ -1,44 +1,37 @@
 import React from "react";
 
-
-const skillsData = [
-  { name: "Java", icon: "☕", category: "backend", description: "OOP and enterprise applications", progress: 85 },
-  { name: "Spring Boot", icon: "🍃", category: "backend", description: "Scalable web applications", progress: 80 },
-  { name: "Python", icon: "🐍", category: "backend", description: "Data processing & backend", progress: 50 },
-  { name: "React", icon: "⚛️", category: "frontend", description: "Modern UI development", progress: 30 },
-  { name: "JavaScript", icon: "📜", category: "frontend", description: "Frontend & DOM manipulation", progress: 60 },
-  { name: "HTML & CSS", icon: "🎨", category: "frontend", description: "Responsive web layouts", progress: 90 },
-  { name: "Git & Github", icon: "📚", category: "tools", description: "Version control & collaboration", progress: 80 },
-];
-
-function Skills() {
+const Skills = () => {
   return (
-    <section id="skills">
-      <div class="section-content">
-      <h2>Skills</h2>
-      
-      <div className="grid-container">
-        {skillsData.map((skill, index) => (
-          <div key={index} className="skill-card">
-            
-            <div className={`skill-icon ${skill.category}`}>
-              {skill.icon}
-            </div>
-
-            <h3 className="skill-name">{skill.name}</h3>
-            <p className="skill-description">{skill.description}</p>
-
-            <div className="skill-progress-container">
-              <div className="skill-progress-bar" style={{ width: `${skill.progress}%` }}></div>
-            </div>
-
-            <p className="skill-progress-text">{skill.progress}%</p>
-          </div>
-        ))}
-      </div>
+    <section id="skills" className="py-5 px-2 md:px-8 lg:px-16">
+      <h2 className="text-2xl font-bold text-center mb-8">Skills</h2>
+      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className="skill-card">
+          <h3 className="text-lg font-semibold">Java</h3>
+          <p className="text-gray-300">Proficient in Java programming and object-oriented design.</p>
+        </div>
+        <div className="skill-card">
+          <h3 className="text-lg font-semibold">Spring Boot</h3>
+          <p className="text-gray-300">Experience in building RESTful APIs and microservices.</p>
+        </div>
+        <div className="skill-card">
+          <h3 className="text-lg font-semibold">Hibernate</h3>
+          <p className="text-gray-300">Skilled in ORM and database management.</p>
+        </div>
+        <div className="skill-card">
+          <h3 className="text-lg font-semibold">JavaScript</h3>
+          <p className="text-gray-300">Proficient in JavaScript and modern frameworks like React.</p>
+        </div>
+        <div className="skill-card">
+          <h3 className="text-lg font-semibold">HTML & CSS</h3>
+          <p className="text-gray-300">Strong understanding of web development standards.</p>
+        </div>
+        <div className="skill-card">
+          <h3 className="text-lg font-semibold">MySQL</h3>
+          <p className="text-gray-300">Experience in database design and management.</p>
+        </div>
       </div>
     </section>
   );
-}
+};
 
 export default Skills;
