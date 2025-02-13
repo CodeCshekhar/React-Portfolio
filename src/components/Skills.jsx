@@ -14,7 +14,7 @@ const Skills = () => {
           <p className="text-gray-300">Experience in building RESTful APIs and microservices.</p>
         </div>
         <div className="skill-card">
-          <h3 className="text-lg font-semibold">Hibernate</h3>
+          <h3 className="text-lg font-semibold">Hibernate-Jpa</h3>
           <p className="text-gray-300">Skilled in ORM and database management.</p>
         </div>
         <div className="skill-card">

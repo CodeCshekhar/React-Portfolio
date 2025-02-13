@@ -5,7 +5,6 @@ function Contact() {
       <section className="container mx-auto p-20">
         <div className="contact-card">
           <h2 className="text-2xl font-bold text-center">Contact Me</h2>
-
             <div className="wrapper flex flex-col items-center md:flex-row">
             <a href="mailto:cwagh2309@gmail.com" className="icon text-center"><i className="fa-brands fa-google"  style={{ fontSize: '1.7rem' }}></i></a>
 
