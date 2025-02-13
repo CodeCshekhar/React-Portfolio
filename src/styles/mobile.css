@@ -33,16 +33,26 @@
     margin: 0.5vh 0;
   }
 
-  /* ===== Cards ===== */
-  .card {
+  /* ===== Cards and Related Sections ===== */
+  .card,
+  .skill-card,
+  .project-card,
+  .education-card {
     border: 2px solid white;
     background-color: #0e0e0e;
-    padding: 3vw;
-    margin: 5vh auto 3vh;
+    padding: 1.5rem;
+    margin: 2rem auto;
     border-radius: 12px;
-    width: 90vw;
-    max-width: 500px;
+    width: calc(100% - 4rem); /* Keeps cards within viewport with fixed side margins */
     box-sizing: border-box;
+  }
+  .card {
+    max-width: 500px;
+  }
+  .skill-card,
+  .project-card,
+  .education-card {
+    max-width: 400px;
   }
 
   /* ===== Profile Image ===== */
@@ -63,36 +73,14 @@
   }
 
   /* ===== Skills Section ===== */
-  .skill-card {
-    padding: 4vw;
-    margin: 2vh auto;
-    width: 90vw;
-    max-width: 400px;
-  }
-
   .skill-name {
     font-size: clamp(1.1rem, 5vw, 1.4rem);
   }
 
   /* ===== Projects Section ===== */
-  .project-card {
-    padding: 4vw;
-    margin: 2vh auto;
-    width: 90vw;
-    max-width: 400px;
-  }
-
   .project-tags span {
     padding: 0.5vh 2vw;
     font-size: clamp(0.7rem, 3vw, 0.9rem);
-  }
-
-  /* ===== Education Section ===== */
-  .education-card {
-    padding: 4vw;
-    margin: 2vh auto;
-    width: 90vw;
-    max-width: 400px;
   }
 
   /* ===== Contact Section ===== */
@@ -146,9 +134,12 @@
     width: 95vw;
   }
 
-  .card, .skill-card, .project-card, .education-card {
-    width: 95vw;
-    padding: 5vw;
+  .card,
+  .skill-card,
+  .project-card,
+  .education-card {
+    width: calc(100% - 2rem); /* Slightly smaller side margins for ultra-small devices */
+    padding: 1rem;
   }
 
   .profile-img {
