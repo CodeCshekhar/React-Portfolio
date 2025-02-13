@@ -48,8 +48,10 @@ nav a:hover {
 
 /* ===== Sections ===== */
 section {
+  height: 100%;
   width: 100%;
   max-width: 1920px;
+  max-height: 1080px;
   margin: 0 auto;
   padding: 0 px;
   box-sizing: border-box;
@@ -64,7 +66,9 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 94%;
+  height: 94%;
   max-width: 1400px;
+  max-height: 1400px;
   box-sizing: border-box;
 }
 
@@ -108,7 +112,9 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 1rem auto;
   width: 94%;
+  height: 94%;
   max-width: 1200px;
+  max-height: 1200px;
   box-sizing: border-box;
 }
 
@@ -235,8 +241,8 @@ section {
   background: linear-gradient(145deg, #1e293b, #1d2838);
   padding: 3rem;
   border-radius: 20px;
-  width: 90%;
-  max-width: 1000px;
+  width: 97%;
+  max-width: 1200px;
   margin: 2rem auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
@@ -411,7 +417,7 @@ section {
   
   .project-card {
     width: 100%;
-    max-width: 600px; /* Prevent over-stretching */
+    max-width: 1200px; /* Prevent over-stretching */
     margin: 1rem auto;
   }
 
@@ -427,7 +433,7 @@ section {
   
   .education-card {
     width: 100%;
-    max-width: 700px;
+    max-width: 1200px;
     margin: 1rem auto;
   }
 
