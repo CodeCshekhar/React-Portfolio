@@ -8,6 +8,8 @@ function Contact() {
 
             <div className="wrapper flex flex-col items-center md:flex-row">
 
+            <a href="mailto:cwagh2309@gmail.com" class="contact-link"></a>
+
             <a href="https://www.linkedin.com/in/chandrashekhar-wagh-240197330/" className="icon text-center"><i className="fa-brands fa-linkedin-in" style={{ fontSize: '1.5rem' }}></i></a>
 
 
