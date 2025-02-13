@@ -1,126 +1,133 @@
-/* ===== Mobile-First Base Styles ===== */
-@media (max-width: 768px) {
-  body {
-    font-family: Arial, sans-serif;
-    background: url('https://user-images.githubusercontent.com/121731124/222512682-c58ddaa2-f914-49a3-aa53-476d22d73dd2.gif') no-repeat center center fixed;
-    background-size: cover;
-    overflow-x: hidden;
-    font-size: clamp(0.8rem, 3vw, 1rem); /* Fluid font scaling */
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    min-width: 280px;
-  }
+/* Base Styles - Mobile First */
+* {
+  box-sizing: border-box;
+}
 
-  /* ===== Navigation ===== */
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8vh; /* Vertical spacing based on viewport */
-    padding: 1.5vh 2vw;
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* Removed background image */
+  overflow-x: hidden;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
-  nav a {
-    background: #292929;
-    color: #e0e0e0;
-    padding: 1.2vh 4vw; /* Vertical padding based on viewport height */
-    width: 92vw; /* Full width minus margins */
-    max-width: 400px;
-    font-size: clamp(0.9rem, 4vw, 1.1rem);
-    border-radius: 25px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    margin: 0.5vh 0;
-  }
+/* ===== Navigation ===== */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
 
-  /* ===== Cards and Related Sections ===== */
-  .card,
-  .skill-card,
-  .project-card,
-  .education-card {
-    border: 2px solid white;
-    background-color: #0e0e0e;
-    padding: 1.5rem;
-    margin: 2rem auto;
-    border-radius: 12px;
-    width: calc(100% - 4rem); /* Keeps cards within viewport with fixed side margins */
-    box-sizing: border-box;
-  }
-  .card {
-    max-width: 500px;
-  }
-  .skill-card,
-  .project-card,
-  .education-card {
-    max-width: 400px;
-  }
+nav a {
+  background: #292929;
+  color: #e0e0e0;
+  padding: 0.75rem 1rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
 
-  /* ===== Profile Image ===== */
-  .profile-img {
-    width: clamp(120px, 35vw, 150px);
-    height: clamp(120px, 35vw, 150px);
-    border: 2px solid #fff;
-    margin-bottom: 2vh;
-  }
+/* ===== Cards and Related Sections ===== */
+.card,
+.skill-card,
+.project-card,
+.education-card {
+  background-color: #0e0e0e;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  width: calc(100% - 2rem);
+  max-width: 500px;  /* Cards can grow up to 500px */
+  text-align: center; /* Center content */
+}
 
-  /* ===== Grid Layout ===== */
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.5vh;
-    width: 90vw;
-    margin: 0 auto;
-  }
+.skill-card,
+.project-card,
+.education-card {
+  max-width: 400px;
+}
 
-  /* ===== Skills Section ===== */
-  .skill-name {
-    font-size: clamp(1.1rem, 5vw, 1.4rem);
-  }
+/* ===== Profile Image ===== */
+.profile-img {
+  width: clamp(120px, 35vw, 150px);
+  height: clamp(120px, 35vw, 150px);
+  border: 2px solid #fff;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 50%;
+}
 
-  /* ===== Projects Section ===== */
-  .project-tags span {
-    padding: 0.5vh 2vw;
-    font-size: clamp(0.7rem, 3vw, 0.9rem);
-  }
+/* ===== Grid Layout ===== */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  /* ===== Contact Section ===== */
-  .contact {
-    padding: 4vw;
-    width: 90vw;
-    max-width: 400px;
-    margin: 3vh auto;
-  }
+/* ===== Sections & Typography ===== */
+h1, h2, h3 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
 
-  .icon {
-    width: clamp(3.5rem, 12vw, 4.5rem);
-    height: clamp(3.5rem, 12vw, 4.5rem);
-  }
+p {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
 
-  .icon > i {
-    font-size: clamp(1.2rem, 5vw, 1.5rem);
-  }
+/* ===== Buttons ===== */
+button, .ref-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: none;
+  background: #292929;
+  color: #e0e0e0;
+  cursor: pointer;
+}
 
-  .contact-link {
-    padding: 1.5vh 5vw;
-    font-size: clamp(0.8rem, 3.5vw, 1rem);
-  }
+/* ===== Contact Section ===== */
+.contact {
+  padding: 1rem;
+  width: 90%;
+  max-width: 400px;
+  margin: 1.5rem auto;
+}
 
-  /* ===== Universal Adjustments ===== */
-  h1, h2, h3 {
-    font-size: clamp(1.2rem, 6vw, 1.8rem);
-    margin: 2vh 0;
-  }
+.icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: inline-block;
+  margin: 0.5rem;
+}
 
-  p {
-    font-size: clamp(0.8rem, 3.5vw, 1rem);
-    line-height: 1.7;
-  }
+.icon > i {
+  font-size: 1.2rem;
+}
 
-  button, .ref-button {
-    padding: 1.5vh 6vw;
-    font-size: clamp(0.85rem, 4vw, 1.1rem);
-    border-radius: 15px;
-  }
+.contact-link {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #292929;
+  color: #e0e0e0;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 /* ===== Ultra-Small Devices ===== */
@@ -128,49 +135,56 @@
   body {
     font-size: 0.75rem;
   }
-
+  
   nav a {
-    padding: 1vh 5vw;
-    width: 95vw;
+    width: 95%;
+    padding: 0.5rem 1rem;
   }
-
+  
   .card,
   .skill-card,
   .project-card,
   .education-card {
-    width: calc(100% - 2rem); /* Slightly smaller side margins for ultra-small devices */
+    width: calc(100% - 1rem);
     padding: 1rem;
   }
-
+  
   .profile-img {
     width: 30vw;
     height: 30vw;
   }
-
+  
   .icon {
     width: 3rem;
     height: 3rem;
   }
 }
 
-/* ===== Orientation Adjustments ===== */
-@media (max-width: 768px) and (orientation: landscape) {
+/* ===== Larger Screens (>= 768px) ===== */
+@media (min-width: 768px) {
   body {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
-
-  .card {
-    margin: 3vh auto;
-  }
-
+  
   nav {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
+    gap: 1.5rem;
   }
-
+  
   nav a {
-    width: 45vw;
-    padding: 1vh 3vw;
+    width: auto;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== Extra Large Screens (>= 1024px) ===== */
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
