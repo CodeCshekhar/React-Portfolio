@@ -10,7 +10,7 @@ const Projects = () => {
 
       <div className="project-card">
           <h3 className="text-lg font-semibold text-center">My Other Portfolio (CodeCshekhar)</h3>
-          <p className="text-gray-300">This is made basic html , css and javascript and user friendly</p>
+          <p className="text-gray-300">This is made using  basic Html, CSS and Javascript and user friendly</p>
           <div className="project-tags">
             <span>Html</span>
             <span>CSS</span>
