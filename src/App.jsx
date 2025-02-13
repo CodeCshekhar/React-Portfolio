@@ -10,6 +10,7 @@ import Education from "./components/Education";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"
 import "./styles/global.css";
+import "./styles/mobile.css";
 
 function App() {
   return (

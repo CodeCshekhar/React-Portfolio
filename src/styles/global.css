@@ -46,19 +46,6 @@ nav a:hover {
   transform: translateY(-3px);
 }
 
-/* Stack navigation vertically on smaller screens */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    width: 80%; /* Wider links for better tap accessibility */
-    font-size: 1.1rem; /* Slightly larger text for readability */
-  }
-}
-
 /* ===== Sections ===== */
 section {
   width: 100%;
@@ -71,13 +58,6 @@ section {
 .section-content {
   width: 100%;
   box-sizing: border-box;
-}
-
-/* Add padding for smaller screens */
-@media (max-width: 768px) {
-  .section-content {
-    padding: 0 1rem;
-  }
 }
 
 /* ===== Cards ===== */
@@ -96,14 +76,6 @@ section {
   margin-right: auto;
 }
 
-/* Adjust card padding and margin for smaller screens */
-@media (max-width: 768px) {
-  .card {
-    padding: 20px;
-    margin-top: 60px;
-  }
-}
-
 /* ===== Profile Image ===== */
 .profile-img {
   width: 100%;
@@ -117,13 +89,6 @@ section {
   margin-bottom: 1rem;
 }
 
-/* Reduce image size for smaller screens */
-@media (max-width: 768px) {
-  .profile-img {
-    max-width: 150px;
-  }
-}
-
 /* ===== Grid Layout ===== */
 .grid-container {
   display: grid;
@@ -132,13 +97,6 @@ section {
   justify-items: center;
   max-width: 100%;
   margin: 0 auto;
-}
-
-/* Stack grid items on smaller screens */
-@media (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ===== Skills Section ===== */
