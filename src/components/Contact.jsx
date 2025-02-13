@@ -8,19 +8,15 @@ function Contact() {
 
             <div className="wrapper flex flex-col items-center md:flex-row">
 
-            <a href="mailto:cwagh2309@gmail.com" class="contact-link"></a>
-
             <a href="https://www.linkedin.com/in/chandrashekhar-wagh-240197330/" className="icon text-center"><i className="fa-brands fa-linkedin-in" style={{ fontSize: '1.5rem' }}></i></a>
-
 
             <a href="https://github.com/CodeCshekhar" className="icon text-center"><i className="fa-brands fa-github" style={{ fontSize: '1.5rem' }}></i></a>
 
+            <a href="mailto:cwagh2309@gmail.com" class="contact-link"></a>
 
             <a href="https://www.instagram.com/chandrashekhar_wagh_23/" className="icon text-center"><i className="fa-brands fa-instagram" style={{ fontSize: '1.5rem' }}></i></a>
 
-
             <a href="https://x.com/ChanduWagh23" className="icon text-center"><i className="fa-brands fa-x-twitter" style={{ fontSize: '1.5rem' }}></i></a>
-
 
           </div>
         </div>
