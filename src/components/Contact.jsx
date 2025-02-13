@@ -16,7 +16,7 @@ function Contact() {
 
             <a href="https://x.com/ChanduWagh23" className="icon text-center"><i className="fa-brands fa-x-twitter" style={{ fontSize: '1.7rem' }}></i></a>
 
-            <a href="mailto:cwagh2309@gmail.com" class="contact-link"></a>
+            <a href="mailto:cwagh2309@gmail.com" className="icon text-center"><i className="fa-brands fa-google"  style={{ fontSize: '1.7rem' }}></i></a>
 
           </div>
         </div>

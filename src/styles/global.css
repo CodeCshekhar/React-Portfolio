@@ -347,6 +347,9 @@ section {
 .icon:has(.fa-github) {
   --color: #333;
 }
+.icon:has(.fa-google) {
+  --color: linear-gradient(45deg,#ce7171,#0e1a50,#8bb48a);
+}
 
 .centered-footer {
   background-color: #1d2d4a;
