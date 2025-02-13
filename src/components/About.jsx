@@ -18,9 +18,9 @@ function About() {
 
           <div className="section-content">
             <div className="outer-box">
-              I am Chandrashekhar Wagh, a Java Full-Stack Web Developer passionate about building web applications. My expertise spans across backend technologies like Spring Boot, Spring MVC, Hibernate, and JPA, along with frontend technologies such as HTML5, CSS, React, and JavaScript.
-
-
+              I am Chandrashekhar Wagh, a Java Full-Stack Web Developer passionate about building web applications.
+              My expertise spans across backend technologies like Spring Boot, Spring MVC, Hibernate, and JPA, along
+               with frontend technologies such as HTML5, CSS, React, and JavaScript. 
               I am a Junior Full-Stack Developer specializing in Java, with extensive experience in building scalable, 
               high-performance applications. My expertise spans across backend technologies like Spring Boot, Spring MVC, 
               Hibernate, and JPA, along with frontend technologies such as HTML5, CSS, React and JavaScript.

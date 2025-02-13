@@ -66,9 +66,7 @@ section {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 94%;
-  height: 94%;
-  max-width: 1400px;
-  max-height: 1400px;
+  max-width: 1100px;
   box-sizing: border-box;
 }
 
@@ -112,9 +110,7 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 1rem auto;
   width: 94%;
-  height: 94%;
-  max-width: 1200px;
-  max-height: 1200px;
+  max-width: 1100px;
   box-sizing: border-box;
 }
 
@@ -141,7 +137,7 @@ section {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   margin: 1rem auto;
   width: 97%;
-  max-width: 1200px;
+  max-width: 1100px;
   transition: transform 0.3s ease-in-out;
   box-sizing: border-box;
 }
@@ -184,8 +180,8 @@ section {
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   margin: 1rem auto;
-  width: 90%;
-  max-width: 700px;
+  width: 94%;
+  max-width: 1100px;
   transition: transform 0.3s ease-in-out;
   box-sizing: border-box;
 }
@@ -200,7 +196,7 @@ section {
 
 .ref-button {
   display: inline-block;
-  background: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
+  background: linear-gradient(135deg, #314461 0%, #234588 100%);
   color: #fff;
   text-decoration: none;
   padding: 0.8rem 1.5rem;
@@ -242,7 +238,7 @@ section {
   padding: 3rem;
   border-radius: 20px;
   width: 97%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 2rem auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
@@ -384,8 +380,8 @@ section {
 
   /* About Section: Full width with padding and centered content */
   #about {
-    width: 100%;
-    max-width: 1200px; /* Adjust max-width as needed */
+    width: 97%;
+    max-width: 1100px; /* Adjust max-width as needed */
     padding: 2rem 3rem;
     margin: 80px auto 0 auto; /* Top margin for navbar space, auto left/right */
     box-sizing: border-box;
@@ -395,7 +391,7 @@ section {
   /* Skills Section: Two columns and centered grid */
   #skills {
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1100px;
     margin-top: 2rem;
     padding: 4rem;
     box-sizing: border-box;
@@ -407,8 +403,8 @@ section {
 
   /* Projects Section: Full-width container with padding, centered */
   #projects {
-    width: 100%;
-    max-width: 1200px;
+    width: 94%;
+    max-width: 1100px;
     padding: 2rem;
     margin: 0 auto;
     box-sizing: border-box;
@@ -416,15 +412,15 @@ section {
   }
   
   .project-card {
-    width: 100%;
-    max-width: 1200px; /* Prevent over-stretching */
+    width: 94%;
+    max-width: 1100px; /* Prevent over-stretching */
     margin: 1rem auto;
   }
 
   /* Education Section: Centered container and cards */
   .education-container {
-    width: 100%;
-    max-width: 1200px;
+    width: 94%;
+    max-width: 1100px;
     padding: 2rem;
     margin: 0 auto;
     box-sizing: border-box;
@@ -432,15 +428,15 @@ section {
   }
   
   .education-card {
-    width: 100%;
-    max-width: 1200px;
+    width: 94%;
+    max-width: 1100px;
     margin: 1rem auto;
   }
 
   /* Objectives Section: Centered card with adjusted spacing */
   .objectives-card {
-    width: 100%;
-    max-width: 1200px;
+    width: 94%;
+    max-width: 1100px;
     margin: 1rem auto;
     padding: 2rem;
     box-sizing: border-box;
