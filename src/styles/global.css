@@ -374,7 +374,7 @@ section {
   text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1080px) {
 
   /* About Section: Full width with padding and centered content */
   #about {
