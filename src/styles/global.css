@@ -13,7 +13,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
-  min-width: 320px;
+  min-width: 300px;
 }
 
 /* ===== Navigation ===== */
@@ -36,7 +36,7 @@ nav a {
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
   text-align: center;
   flex: 1 1 auto;
-  min-width: 150px;
+  min-width: 120px;
 }
 
 nav a:hover {
@@ -49,7 +49,7 @@ nav a:hover {
 /* ===== Sections ===== */
 section {
   height: 100%;
-  max-width: 1920px;
+  max-width:max-content;
   margin: 0 auto;
   padding: 0 px;
   box-sizing: border-box;
@@ -382,7 +382,7 @@ section {
   /* About Section: Full width with padding and centered content */
   #about {
     width: 97%;
-    max-width: 1000px; /* Adjust max-width as needed */
+    max-width: 900px; /* Adjust max-width as needed */
     padding: 2rem 3rem;
     margin: 80px auto 0 auto; /* Top margin for navbar space, auto left/right */
     box-sizing: border-box;
@@ -392,7 +392,7 @@ section {
   /* Skills Section: Two columns and centered grid */
   #skills {
     gap: 20px;
-    max-width: 1000px;
+    max-width: 900px;
     margin-top: 2rem;
     padding: 4rem;
     box-sizing: border-box;
@@ -405,7 +405,7 @@ section {
   /* Projects Section: Full-width container with padding, centered */
   #projects {
     width: 94%;
-    max-width: 1000px;
+    max-width: 900px;
     padding: 2rem;
     margin: 0 auto;
     box-sizing: border-box;
@@ -414,14 +414,14 @@ section {
   
   .project-card {
     width: 94%;
-    max-width: 1000px; /* Prevent over-stretching */
+    max-width: 900px; /* Prevent over-stretching */
     margin: 1rem auto;
   }
 
   /* Education Section: Centered container and cards */
   .education-container {
     width: 94%;
-    max-width: 1000px;
+    max-width: 900px;
     padding: 2rem;
     margin: 0 auto;
     box-sizing: border-box;
@@ -430,14 +430,14 @@ section {
   
   .education-card {
     width: 94%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 1rem auto;
   }
 
   /* Objectives Section: Centered card with adjusted spacing */
   .objectives-card {
     width: 94%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 1rem auto;
     padding: 2rem;
     box-sizing: border-box;
@@ -448,7 +448,7 @@ section {
 /* ===== Additional Media Queries ===== */
 @media (max-width: 768px) {
   nav a {
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 0.8rem;
     font-size: 0.9rem;
   }
 
@@ -471,7 +471,7 @@ section {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   body {
     font-size: 14px;
   }
