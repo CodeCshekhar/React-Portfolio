@@ -4,7 +4,9 @@ const Skills = () => {
   return (
     <section id="skills" className="py-5 px-2 md:px-8 lg:px-16">
       <h2 className="text-2xl font-bold text-center mb-8">Skills</h2>
-      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      
+      {/* Apply the correct class to the container */}
+      <div className="skills-container">
         <div className="skill-card">
           <h3 className="text-lg font-semibold">Java</h3>
           <p className="text-gray-300">Proficient in Java programming and object-oriented design.</p>
@@ -31,7 +33,7 @@ const Skills = () => {
         </div>
         <div className="skill-card">
           <h3 className="text-lg font-semibold">Git & Github</h3>
-          <p className="text-gray-300">Experience in Repo's Managemnet.</p>
+          <p className="text-gray-300">Experience in Repo's Management.</p>
         </div>
         <div className="skill-card">
           <h3 className="text-lg font-semibold">MySQL</h3>

@@ -1,29 +1,42 @@
-/* ===== Fluid Base Styles ===== */
+/* ===== Global Styles ===== */
 html {
   font-size: clamp(14px, 1.5vw, 18px);
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background: url('https://i.pinimg.com/originals/f3/aa/7e/f3aa7eb96eeb916a485c8ff634c46ac6.gif')no-repeat center center fixed;
+  background: url('https://i.pinimg.com/originals/f3/aa/7e/f3aa7eb96eeb916a485c8ff634c46ac6.gif') no-repeat center center fixed;
   background-size: cover;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding-top: 80px;
+  padding-bottom: 60px;
   min-width: 300px;
 }
 
-/* ===== Navigation ===== */
+/* ===== Fixed Navigation Bar ===== */
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(175, 179, 133, 0.95);
+  padding: 0.8rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+nav .nav-content {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.9rem;
-  padding: 0.8rem;
-  border-radius: 20px;
 }
 
 nav a {
@@ -37,37 +50,99 @@ nav a {
   text-align: center;
   flex: 1 1 auto;
   min-width: 120px;
+  text-decoration: none;
 }
 
-nav a:hover {
-  background: #3a3a2e;
-  color: #ffffff;
-  box-shadow: 0 4px 8px rgb(243, 243, 243);
-  transform: translateY(-3px);
+nav button:hover {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 6px rgb(255, 255, 255);
+  transform: translateY(-5px);
 }
 
 /* ===== Sections ===== */
 section {
-  height: 100%;
-  max-width:max-content;
-  margin: 0 auto;
-  padding: 0 px;
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 2rem;
   box-sizing: border-box;
 }
 
-/* ===== Cards & General Containers ===== */
+/* ===== Cards (All Sections) ===== */
 .card,
-.objectives-card {
+.about-card,
+.objectives-card,
+.project-card,
+.education-card,
+.contact-card {
   background-color: rgb(79, 79, 49);
   padding: 20px;
-  margin: 100px 1rem 0;
+  margin: 40px auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgb(92, 92, 92);
-  width: 94%;
-  max-width: 1000px;
+  width: 90%;
+  max-width: 1782px;
   box-sizing: border-box;
 }
 
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+  gap: 2rem;
+  width: 90%;
+  max-width: 1782px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background-color: rgb(79, 79, 49);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(92, 92, 92, 0.8);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgb(255, 255, 255);
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 0.5rem;
+}
+
+.project-tags span {
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.project-links {
+  margin-top: 1.5rem;
+}
+
+.ref-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #474646 0%, #25407a 100%);
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ref-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgb(255, 255, 255);
+}
+
+/* ===== Outer Box ===== */
 .outer-box {
   border: 4px solid #2a2424;
   padding: 30px;
@@ -88,195 +163,13 @@ section {
   box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.3);
 }
 
-/* ===== Grid Layout ===== */
-.grid-container {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  justify-content: space-around;
-  width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-/* ===== Skills Section ===== */
-#skills {
-  background: linear-gradient(to bottom right, #50545c, #b5bb7c);
-  border-radius: 15px;
-  margin-top: 10px;
-  padding: 1rem;
-  box-sizing: border-box;
-  gap: 20px;
-}
-
-
-.skill-card {
-  background: linear-gradient(to bottom right, #48493b, #545235);
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 0; /* Removed margin to allow grid layout to manage spacing */
-  width: 94%;
-  max-width: 1000px;
-  box-sizing: border-box;
-}
-
-
-.skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgb(255, 255, 255);
-}
-
-/* ===== Projects Section ===== */
-#projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-.project-card {
-  background: #46472f;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 1rem auto;
-  width: 97%;
-  max-width: 1000px;
-  transition: transform 0.3s ease-in-out;
-  box-sizing: border-box;
-}
-
-.project-card:hover {
-  transform: scale(1.03);
-}
-
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 15px;
-}
-
-.project-tags span {
-  background: rgba(255, 255, 255, 0.3);
-  color: #fff;
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  font-size: 0.8rem;
-}
-
-/* ===== Education Section ===== */
-.education-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 50px 20px;
-  border-radius: 10px;
-  width: 94%;
-  box-sizing: border-box;
-}
-
-.education-card {
-  background: #47482d;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgb(255, 255, 255);
-  margin: 1rem auto;
-  width: 94%;
-  max-width: 1100px;
-  transition: transform 0.3s ease-in-out;
-  box-sizing: border-box;
-}
-
-.education-card:hover {
-  box-shadow: 0px 4px 6px rgb(115, 128, 18);
-  transform: scale(1.05);
-}
-
-.Education-links {
-  margin-top: 1.5rem;
-}
-
-.ref-button {
-  display: inline-block;
-  background: linear-gradient(135deg, #373836 0%, #38372c 100%);
-  color: #ffffff;
-  text-decoration: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 12px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 6px rgb(145, 144, 144);
-}
-
-.ref-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 6px rgb(255, 255, 255);
-}
-
-/* ===== Download Button ===== */
-.download-btn button {
-  background-color: #3498db;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  padding: 12px 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(181, 181, 182, 0.74);
-}
-
-.download-btn button:hover {
-  background-color: #2980b9;
-  box-shadow: 0 4px 6px rgb(255, 255, 255);
-  transform: scale(1.1);
-}
-
-/* ===== Contact Section ===== */
-
-.contact-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.3rem 1.5rem;
-  background: linear-gradient(135deg, #0077b6 0%, #00b4d8 100%);
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(181, 181, 182, 0.74);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  width: fit-content;
-  margin: 0 auto;
-}
-
-.contact-link:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 6px rgb(255, 255, 255);
-  background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
-}
-
-.contact-link::before {
-  content: '📧';
-  font-size: 1.8rem;
-}
-
+/* ===== Social Icons Styling ===== */
 .wrapper {
-  margin-top: 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2.7rem;
-  
+  gap: 2rem;
 }
 
 .icon {
@@ -284,7 +177,7 @@ section {
   width: 5.625rem;
   height: 5.625rem;
   border-radius: 14px;
-  background-color: #635f3b;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,6 +225,10 @@ section {
   }
 }
 
+.icon:has(.fa-google) {
+  --color: linear-gradient(45deg, #971f1f, #23428f, #1c8f1d);
+}
+
 .icon:has(.fa-instagram) {
   --color: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
 }
@@ -347,18 +244,52 @@ section {
 .icon:has(.fa-github) {
   --color: #333;
 }
-.icon:has(.fa-google) {
-  --color: linear-gradient(45deg,#ce7171,#0e1a50,#8bb48a);
+
+/* ===== Buttons ===== */
+.button {
+  background: #4a4a3b;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1rem;
+  display: inline-block;
+  text-decoration: none;
 }
 
+.button:hover {
+  background: #3a3a2e;
+  box-shadow: 0 4px 8px rgb(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+.download-btn button {
+  background-color: #3498db;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(181, 181, 182, 0.74);
+}
+
+.download-btn button:hover {
+  background-color: #2980b9;
+  box-shadow: 0 4px 6px rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+
+/* ===== Fixed Footer ===== */
 .centered-footer {
   background-color: #1d2d4a;
-  padding: 1rem;            
-  color: #ffffff;           
-  margin-top: 2.5rem;       
+  padding: 1rem;
+  color: #ffffff;
   width: 100%;
-  
-  /* Use flexbox to center the content */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -366,7 +297,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
- 
+  z-index: 1000;
 }
 
 .centered-footer p {
@@ -374,230 +305,60 @@ section {
   text-align: center;
 }
 
-@media (min-width: 1080px) {
+/* ===== Responsive Media Queries ===== */
+@media (min-width: 1200px) {
 
-  /* About Section: Full width with padding and centered content */
-  #about {
-    width: 97%;
-    max-width: 900px; /* Adjust max-width as needed */
-    padding: 2rem 3rem;
-    margin: 80px auto 0 auto; /* Top margin for navbar space, auto left/right */
-    box-sizing: border-box;
-    text-align: center; /* Center inner content if needed */
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; /* 2 columns for medium screens */
   }
 
-  /* Skills Section: Two columns and centered grid */
-  #skills {
-    gap: 20px;
-    max-width: 900px;
-    margin-top: 2rem;
-    padding: 4rem;
-    box-sizing: border-box;
+  .card {
+    padding: 3rem;
+    margin: 3rem auto;
   }
-  
-  .skill-card {
+
+  .profile-img {
+    max-width: 240px;
     margin: 2rem auto;
   }
 
-  /* Projects Section: Full-width container with padding, centered */
-  #projects {
-    width: 94%;
-    max-width: 900px;
-    padding: 2rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  .project-card {
-    width: 94%;
-    max-width: 900px; /* Prevent over-stretching */
-    margin: 1rem auto;
+  nav {
+    gap: 1.5rem;
+    padding: 1.2rem;
   }
 
-  /* Education Section: Centered container and cards */
-  .education-container {
-    width: 94%;
-    max-width: 900px;
-    padding: 2rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  .education-card {
-    width: 94%;
-    max-width: 900px;
-    margin: 1rem auto;
-  }
-
-  /* Objectives Section: Centered card with adjusted spacing */
-  .objectives-card {
-    width: 94%;
-    max-width: 900px;
-    margin: 1rem auto;
-    padding: 2rem;
-    box-sizing: border-box;
+  nav a {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    min-width: 160px;
   }
 }
 
-
-/* ===== Additional Media Queries ===== */
 @media (max-width: 768px) {
+
+  .skills-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for small screens */
+  }
+
   nav a {
     padding: 0.6rem 0.8rem;
     font-size: 0.9rem;
   }
 
-   /* About Section: Full width with padding and centered content */
-   #about {
-    width: 97%;
-    max-width: 900px; /* Adjust max-width as needed */
-    padding: 2rem 3rem;
-    margin: 80px auto 0 auto; /* Top margin for navbar space, auto left/right */
-    box-sizing: border-box;
-    text-align: center; /* Center inner content if needed */
-  }
-
-  /* Skills Section: Two columns and centered grid */
-  #skills {
-    gap: 20px;
-    max-width: 900px;
-    margin-top: 2rem;
-    padding: 4rem;
-    box-sizing: border-box;
-  }
-  
-  .skill-card {
-    margin: 2rem auto;
-  }
-
-  /* Projects Section: Full-width container with padding, centered */
-  #projects {
-    width: 94%;
-    padding: 2rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  .project-card {
-    width: 94%;
-    margin: 1rem auto;
-  }
-
-  /* Education Section: Centered container and cards */
-  .education-container {
-    width: 94%;
-    padding: 2rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  .education-card {
-    width: 94%;
-    margin: 1rem auto;
-  }
-
-  /* Objectives Section: Centered card with adjusted spacing */
-  .objectives-card {
-    width: 94%;
-    margin: 1rem auto;
-    padding: 2rem;
-    box-sizing: border-box;
-  }
-
   .profile-img {
     max-width: 150px;
   }
-
-  .download-btn button {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
 }
 
-@media (max-width: 450px),(min-width:300px) {
-  body {
-    font-size: 14px;
-  }
-
+@media (max-width: 450px) {
   nav a {
     min-width: 120px;
     padding: 0.5rem 0.8rem;
     font-size: 0.8rem;
   }
 
-  #about {
-    width: 97%;
-    max-width: 900px; /* Adjust max-width as needed */
-    padding: 2rem 3rem;
-    margin: 80px auto 0 auto; /* Top margin for navbar space, auto left/right */
-    box-sizing: border-box;
-    text-align: center; /* Center inner content if needed */
-  }
-
-  /* Skills Section: Two columns and centered grid */
-  #skills {
-    gap: 20px;
-    max-width: 900px;
-    margin-top: 2rem;
-    padding: 4rem;
-    box-sizing: border-box;
-  }
-  
-  .skill-card {
-    margin: 2rem auto;
-  }
-
-  /* Projects Section: Full-width container with padding, centered */
-  #projects {
-    width: 94%;
-    padding: 2rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  .project-card {
-    width: 94%;
-    margin: 1rem auto;
-  }
-
-  /* Education Section: Centered container and cards */
-  .education-container {
-    width: 94%;
-    padding: 2rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  .education-card {
-    width: 94%;
-    margin: 1rem auto;
-  }
-
-  /* Objectives Section: Centered card with adjusted spacing */
-  .objectives-card {
-    width: 94%;
-    margin: 1rem auto;
-    padding: 2rem;
-    box-sizing: border-box;
-  }
-
   .profile-img {
-    max-width: 150px;
-  }
-
-  .download-btn button {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-
-  .icon {
-    width: 4.5rem;
-    height: 4.5rem;
+    max-width: 130px;
   }
 }
