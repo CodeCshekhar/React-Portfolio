@@ -285,13 +285,13 @@ section {
   }
 
   nav {
-    gap: 1.5rem;
-    padding: 1.2rem;
+    gap: 1.6rem;
+    padding: 1rem;
   }
 
   nav a {
-    font-size: 1.1rem;
-    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    padding: 0.9rem 1.6rem;
     min-width: 160px;
   }
 }
@@ -303,7 +303,7 @@ section {
   }
 
   nav a {
-    padding: 0.6rem 0.8rem;
+    padding: 0.6rem 0.6rem;
     font-size: 0.9rem;
   }
 
@@ -315,7 +315,7 @@ section {
 @media (max-width: 450px) {
   nav a {
     min-width: 120px;
-    padding: 0.5rem 0.8rem;
+    padding: 0.5rem 0.5rem;
     font-size: 0.8rem;
   }
 
