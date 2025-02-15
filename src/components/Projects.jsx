@@ -9,7 +9,7 @@ const Projects = () => {
 
 
       <div className="project-card">
-          <h3 className="text-lg font-semibold text-center">My Other Portfolio (CodeCshekhar)</h3>
+          <h3 className="text-lg font-semibold text-center">My Main Portfolio (CodeCshekhar)</h3>
           <p className="text-gray-300">This is made using  basic Html, CSS and Javascript and user friendly</p>
           <div className="project-tags">
             <span>Html</span>

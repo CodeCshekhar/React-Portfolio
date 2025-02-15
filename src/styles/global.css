@@ -245,48 +245,9 @@ section {
   --color: #333;
 }
 
-/* ===== Buttons ===== */
-.button {
-  background: #4a4a3b;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s;
-  font-size: 1rem;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.button:hover {
-  background: #3a3a2e;
-  box-shadow: 0 4px 8px rgb(255, 255, 255, 0.3);
-  transform: translateY(-3px);
-}
-
-.download-btn button {
-  background-color: #3498db;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px;
-  padding: 12px 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(181, 181, 182, 0.74);
-}
-
-.download-btn button:hover {
-  background-color: #2980b9;
-  box-shadow: 0 4px 6px rgb(255, 255, 255);
-  transform: translateY(-3px);
-}
-
 /* ===== Fixed Footer ===== */
 .centered-footer {
-  background-color: #1d2d4a;
+  background: rgba(175, 179, 133, 0.95);
   padding: 1rem;
   color: #ffffff;
   width: 100%;

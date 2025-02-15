@@ -13,9 +13,7 @@ function Objectives() {
             <li>Implement web security best practices, such as OAuth, JWT, and secure API design in Java-based applications.</li><br></br>    
             <li>Stay up-to-date with new Java technologies, improve problem-solving skills, and contribute effectively in Agile teams.</li><br></br>  
           </ul>
-          <a href="https://drive.google.com/file/d/1B_bN3RvoskG59Pd6w5fr4EPRaVOnAnX7/view?usp=sharing" download className="download-btn">
-            <button>Check My Resume</button>
-          </a>
+          <a href="https://drive.google.com/file/d/1B_bN3RvoskG59Pd6w5fr4EPRaVOnAnX7/view?usp=sharing" download className="ref-button">Check My Resume</a>
         </div>
       </section>
   );
