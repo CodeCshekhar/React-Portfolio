@@ -281,7 +281,7 @@ section {
 .download-btn button:hover {
   background-color: #2980b9;
   box-shadow: 0 4px 6px rgb(255, 255, 255);
-  transform: scale(1.1);
+  transform: scale(0.7);
 }
 
 /* ===== Fixed Footer ===== */
