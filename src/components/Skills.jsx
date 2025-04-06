@@ -20,6 +20,10 @@ const Skills = () => {
           <p className="text-gray-300">Skilled in ORM, database mapping, query optimization, and managing relational data efficiently in Java applications.</p>
         </div>
         <div className="skill-card">
+          <h3 className="text-lg font-semibold">WordPress</h3>
+          <p className="text-gray-300">Proficient in building interactive UIs fordynamic web applications.</p>
+        </div>
+        <div className="skill-card">
           <h3 className="text-lg font-semibold">React</h3>
           <p className="text-gray-300">Proficient in building interactive UIs with reusable components, state management, and API integration for dynamic web applications.</p>
         </div>

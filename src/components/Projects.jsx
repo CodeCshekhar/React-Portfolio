@@ -7,6 +7,17 @@ const Projects = () => {
       <h2 className="text-2xl font-bold text-center mb-8">Projects</h2>
       <div className="grid gap-6 grid-cols-1 md:grid-cols-1 lg:grid-cols-2 w-full">
 
+      <div className="project-card">
+          <h3 className="text-lg font-semibold text-center">WordPress Portfolio</h3>
+          <p className="text-gray-300">This is made using WordPress, basic Html</p>
+          <div className="project-tags">
+            <span>Html</span>
+            <span>WordPress</span>
+          </div>
+          <div className="project-links">
+            <a href="https://chandrashekharportfolio.wordpress.com/" target="_blank" className="ref-button">View Website</a>
+          </div>
+        </div>
 
       <div className="project-card">
           <h3 className="text-lg font-semibold text-center">My Main Portfolio (CodeCshekhar)</h3>
